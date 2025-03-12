@@ -26,9 +26,16 @@ class CargoTrain(number : Int, destination: String, days : Int, arrive_time : St
     {
         try
         {
-            print("Сколько груза прибавить? : ")
+            print("Сколько груза прибавить? грузоподьёмность поезда не более 5000 кг : ")
             var number = readln().toInt()
-            cargo_weight += number
+            if (cargo_weight + number <= 5000)
+            {
+                cargo_weight += number
+            }
+            else
+            {
+                println("Поезд будет перегружен, груз не добавлен")
+            }
         }
         catch (e:Exception)
         {

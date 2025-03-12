@@ -29,6 +29,7 @@ open class Tovar(var name : String, var price : Int, var weight_type : String, v
     open fun Gone_bad()
     {
         println("Товар испортился")
+        price = price / 2
     }
     open fun Lower_Price()
     {

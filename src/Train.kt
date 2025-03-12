@@ -17,9 +17,10 @@ open class Train(var number: Int, var destination: String, var days : Int, var a
             println("Время введено неверно")
         }
     }
-    open fun Arrival()
+    open fun Change_destination()
     {
-        println("Прибытие в $arrive_time")
+        print("Введите новый пункт назначения: ")
+        destination = readln()
     }
     open fun Delay_days()
     {

@@ -17,6 +17,7 @@ class BreadTovar(name : String, price : Int, weight_type : String, type : String
     override fun Gone_bad()
     {
         println("Хлеб зачерствел")
+        price = price / 2
     }
     fun SelectWhite()
     {
